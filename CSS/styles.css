@@ -30,6 +30,17 @@ body {
 
 /* general settings */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+ margin:0;
+}
+
+
 img {
   display: block;
   height: auto;
@@ -161,24 +172,41 @@ img {
 .hero {
   background-color: var(--backgr-dark);
   color: var(--wh-cl);
+  padding: 200px 452px 280px 452px;
+  text-align: center;
 }
 
 .hero-heading {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
+.hero-content {
+  margin-bottom: 30px;
+  
+}
+
 .hero-button {
+  display: inline-block;
   font-weight: 700;
+  min-width: 200px;
+  min-height: 50px;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
   background-color: var(--accent-cl);
   color: var(--wh-cl);
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+.button-content {
+  padding: 10px 32px;
+
 }
 
 /* features section home page */
@@ -251,4 +279,23 @@ color: var(--add-cl);
   letter-spacing: 0.03em;
   color: var(--main-text-cl);
   font-weight: 400;
+}
+
+.container {
+  width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.container,
+.header,
+.hero,
+.features,
+.activity,
+.team,
+footer {
+  outline: 1px solid tomato;
 }
